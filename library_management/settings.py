@@ -76,15 +76,15 @@ WSGI_APPLICATION = 'library_management.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Library_management',
         'USER': 'postgres',
         'PASSWORD': 'appaamma',
         'HOST': 'localhost',
         'PORT': '5432',
-
     }
 }
+
 
 
 # Password validation

@@ -146,7 +146,7 @@ class Person(models.Model):
 class Proceedings(models.Model):
     docid = models.IntegerField(db_column='DocID', primary_key=True)  # Field name made lowercase.
     cdate = models.DateField(db_column='CDate', blank=True, null=True)  # Field name made lowercase.
-    clocation = models.CharField(db_column='CLocation', max_length=-1, blank=True, null=True)  # Field name made lowercase.
+    clocation = models.CharField(db_column='CLocation', max_length=255, blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False
